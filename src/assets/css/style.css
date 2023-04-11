@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+body {
+    background: #f0f4f7;
+    font-family: "Inter", "Hind Siliguri", "Baloo Da 2", sans-serif;
+    /* min-height: 100vh; */
+}
+
+.text-primary {
+    color: #6e1fea !important;
+}
+.text-secondary {
+    color: #ed3e80 !important;
+}
+.text-success {
+    color: #00c292 !important;
+}
+.text-info {
+    color: #00b0f0 !important;
+}
+.text-warning {
+    color: #ffba00 !important;
+}
+.text-danger {
+    color: #ff4546 !important;
+}
+.text-light {
+    color: #f0f4f7 !important;
+}
+.text-dark {
+    color: #36344d !important;
+}
+.text-white {
+    color: #fff !important;
+}
+.bg-primary {
+    background-color: #6e1fea !important;
+}
+.bg-secondary {
+    background-color: #ed3e80 !important;
+}
+.bg-success {
+    background-color: #00c292 !important;
+}
+.bg-info {
+    background-color: #00b0f0 !important;
+}
+.bg-warning {
+    background-color: #ffba00 !important;
+}
+.bg-danger {
+    background-color: #ff4546 !important;
+}
+.bg-light {
+    background-color: #f0f4f7 !important;
+}
+.bg-dark {
+    background-color: #36344d !important;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+
+/* @media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+} */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+    background: #36344d;
+}
+
+.sidebar .active {
+    /* border-radius: 50px; */
+    background: #ff4546 !important;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav-item {
+    border-radius: 10px;
+    color: #fbfbfb;
+}
+
+.menu .nav-item .nav-link:hover {
+    color: #ed3e80;
+}
+
+.menu .nav-item .nav-link {
+    padding: 7px 20px !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-item .active {
+    background: #ed3e80;
+    border-radius: 10px;
+    color: #fff !important;
+}
+
+.heroSection {
+    height: 350px;
+    background: #6e1fea;
+    border-radius: 0 0 30px 30px;
+    background: linear-gradient(
+            rgba(109, 31, 234, 0.5),
+            rgba(237, 62, 129, 0.5)
+        ),
+        url(../images/4855148.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* glassy background */
+.glassy {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (min-width: 768px) {
+    .p-relative {
+        position: relative !important;
+    }
+    .p-absolute {
+        position: absolute !important;
+    }
+    .t-100 {
+        top: 100% !important;
+    }
+    .s-50 {
+        left: 50% !important;
+    }
+    .tr-middle {
+        transform: translate(-50%, -50%) !important;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .list-group-item {
+    border: none;
+    margin: 3px 0;
+    background: none;
+    color: #fbfbfb;
+}
+
+.btn {
+    text-transform: none;
+}
+
+.btn-primary {
+    background: #6e1fea;
+}
+.btn-primary:hover {
+    background: #5033a8;
+}
+
+/* bottom border input */
+.bb-input {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    background: transparent;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    box-shadow: none;
+}
+.bb-input:focus {
+    box-shadow: none !important;
+    border-bottom: 1px solid #6e1fea !important;
+    border-radius: 0;
+    background: transparent;
+}
+
+/* ck editor */
+.ck-editor__editable {
+    min-height: 100px;
+}
+
+/* add-btn */
+.add-btn {
+    position: relative;
+    padding: 0.5rem 2rem;
+    border-radius: 0 0 25px 25px;
+}
