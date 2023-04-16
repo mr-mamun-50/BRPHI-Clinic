@@ -21,6 +21,7 @@ export default function Home() {
                         <HomeMenuCard
                             text="Register Patient"
                             icon="fas fa-hospital-user"
+                            route="/register-patient"
                         />
                         <HomeMenuCard
                             text="Telemedicine"

@@ -98,7 +98,8 @@ body {
 }
 
 .menu .nav-item .nav-link:hover {
-    color: #ed3e80;
+    /* color: #ed3e80; */
+    color: #6e1fea;
 }
 
 .menu .nav-item .nav-link {
@@ -111,7 +112,8 @@ body {
 }
 
 .nav-item .active {
-    background: #ed3e80;
+    /* background: #ed3e80; */
+    background: #6e1fea;
     border-radius: 10px;
     color: #fff !important;
 }
@@ -119,10 +121,12 @@ body {
 .heroSection {
     height: 350px;
     background: #6e1fea;
-    border-radius: 0 0 30px 30px;
+    /* border-radius: 0 0 30px 30px; */
+    /* background: linear-gradient(rgba(109, 31, 234, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/4855148.jpg) no-repeat center center; */
     background: linear-gradient(
             rgba(109, 31, 234, 0.5),
-            rgba(237, 62, 129, 0.5)
+            rgba(255, 255, 255, 0.3)
         ),
         url(../images/4855148.jpg) no-repeat center center;
     background-size: cover;

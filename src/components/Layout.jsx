@@ -12,7 +12,7 @@ export default function Layout() {
             <main style={{ marginTop: "58px" }}>
                 <Outlet />
             </main>
-            <footer className="fixed-bottom bg-light">
+            <footer>
                 <Footer />
             </footer>
         </>

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ClinicList from "./pages/ClinicList";
 import FindPatient from "./pages/FindPatient";
 import Telemedicine from "./pages/Telemedicine";
+import RegisterPatient from "./pages/RegisterPatient";
 
 function App() {
     return (
@@ -14,6 +15,10 @@ function App() {
 
                     <Route path="/clinic-list" element={<ClinicList />} />
                     <Route path="/find-patient" element={<FindPatient />} />
+                    <Route
+                        path="/register-patient"
+                        element={<RegisterPatient />}
+                    />
                     <Route path="/telemedicine" element={<Telemedicine />} />
                 </Route>
 

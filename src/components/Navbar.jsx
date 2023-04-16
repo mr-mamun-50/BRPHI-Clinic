@@ -4,7 +4,7 @@ import logo from "../assets/images/GramGP.png";
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <nav className="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow-sm">
             <div className="container-fluid">
                 <Link to="/" className="navbar-brand">
                     <img src={logo} height="40" alt="" loading="lazy" />
@@ -87,7 +87,7 @@ export default function Navbar() {
                                 aria-expanded="false"
                             >
                                 <img
-                                    src="https://i.pinimg.com/originals/34/60/3c/34603ce8a80b1ce9a768cad7ebf63c56.jpg"
+                                    src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
                                     className="rounded-circle"
                                     height="22"
                                     alt=""
