@@ -113,7 +113,10 @@ export default function Navbar() {
                                     <hr className="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <Link className="dropdown-item">
+                                    <Link
+                                        to={"login"}
+                                        className="dropdown-item"
+                                    >
                                         Logout
                                     </Link>
                                 </li>
