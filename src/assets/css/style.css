@@ -158,6 +158,10 @@ body {
     font-size: 14px !important;
 }
 
+.react-datepicker__month-container {
+    font-family: "PF Isotext Pro", sans-serif !important;
+}
+
 @media (min-width: 768px) {
     .p-relative {
         position: relative !important;
