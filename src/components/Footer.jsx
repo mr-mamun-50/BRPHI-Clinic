@@ -4,16 +4,22 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div className="bg-link text-center text-lg-start fixed-bottom bg-light">
-            <div className="d-flex justify-content-between align-items-center p-3">
-                <img src={logo} alt="BRPHI" style={{ height: "40px" }} />
-                <small>
-                    {"©" + new Date().getFullYear() + " Copyright: "}
-                    <a href="https://gramgp.com/">gramgp.com</a>
-                </small>
-                <small>
-                    <Link className="text-muted">Feedback</Link>
-                </small>
+        <div className="fixed-bottom bg-white">
+            <div className="row py-2 align-items-center">
+                <div className="col">
+                    <small className="ms-4">
+                        {"©" + new Date().getFullYear() + " Copyright: "}
+                        <a href="https://gramgp.com/">gramgp.com</a>
+                    </small>
+                </div>
+                <div className="col text-center">
+                    <img src={logo} alt="BRPHI" style={{ height: "40px" }} />
+                </div>
+                <div className="col text-end">
+                    <small className="me-4">
+                        <Link className="text-muted">Feedback</Link>
+                    </small>
+                </div>
             </div>
         </div>
     );

@@ -8,81 +8,104 @@ export default function ClinicList() {
 
     const columns = [
         {
-            name: "Clinic Name",
-            selector: "clinicName",
+            name: "Patient Name",
+            selector: "patientName",
             sortable: true,
         },
         {
-            name: "Address",
-            selector: "address",
+            name: "EMR no.",
+            selector: "emrNo",
             sortable: true,
         },
         {
-            name: "Phone",
-            selector: "phone",
+            name: "Gender",
+            selector: "gender",
             sortable: true,
         },
         {
-            name: "Email",
-            selector: "email",
+            name: "Date of Birth",
+            selector: "dob",
             sortable: true,
+        },
+        {
+            name: "Reason",
+            selector: "reason",
+            sortable: true,
+        },
+        {
+            name: "Action",
+            button: true,
+            cell: (row) => (
+                <button className="btn btn-secondary btn-sm px-2">
+                    <i className="fas fa-eye"></i>
+                </button>
+            ),
         },
     ];
 
     const data = [
         {
-            clinicName: "Clinic 1",
-            address: "Address 1",
-            phone: "Phone 1",
-            email: "Email 1",
+            patientName: "John Doe",
+            emrNo: "123456",
+            gender: "Male",
+            dob: "01/01/1990",
+            reason: "Consultation",
         },
         {
-            clinicName: "Clinic 2",
-            address: "Address 2",
-            phone: "Phone 2",
-            email: "Email 2",
+            patientName: "Hannah Doe",
+            emrNo: "123457",
+            gender: "Female",
+            dob: "01/01/1990",
+            reason: "Consultation",
         },
         {
-            clinicName: "Clinic 3",
-            address: "Address 3",
-            phone: "Phone 3",
-            email: "Email 3",
+            patientName: "Mr. Doe",
+            emrNo: "123456",
+            gender: "Male",
+            dob: "01/01/1990",
+            reason: "Consultation",
         },
     ];
 
     return (
         <div className="container pt-4">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="m-2">
                 <p className="display-6">Clinic List</p>
-                <div>
-                    <ReactDatePicker
-                        className="form-control"
-                        selected={startDate}
-                        onChange={(date) => setStartDate(date)}
-                    />
-                </div>
             </div>
-            <div className="card card-body">
-                <DataTable
-                    title={
-                        <div className="d-flex justify-content-between">
-                            <div className="input-group w-25">
-                                <div className="input-group-text border-0 ps-0">
-                                    <i className="fas fa-search"></i>
+            <div className="d-md-flex">
+                <div className="m-2">
+                    <div className="card pt-2 ps-2 pe-2 shadow-sm">
+                        <ReactDatePicker
+                            selected={startDate}
+                            onChange={(date) => setStartDate(date)}
+                            inline
+                        />
+                    </div>
+                </div>
+                <div className="w-100 m-2">
+                    <div className="card card-body shadow-sm">
+                        <DataTable
+                            title={
+                                <div className="d-flex justify-content-between">
+                                    <div className="input-group w-25">
+                                        <div className="input-group-text border-0 ps-0">
+                                            <i className="fas fa-search"></i>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            className="form-control bb-input"
+                                            placeholder="Search title"
+                                        />
+                                    </div>
                                 </div>
-                                <input
-                                    type="text"
-                                    className="form-control bb-input"
-                                    placeholder="Search title"
-                                />
-                            </div>
-                        </div>
-                    }
-                    columns={columns}
-                    data={data}
-                    pagination
-                    selectableRows
-                />
+                            }
+                            columns={columns}
+                            data={data}
+                            pagination
+                            selectableRows
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );

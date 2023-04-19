@@ -5,6 +5,7 @@ import ClinicList from "./pages/ClinicList";
 import FindPatient from "./pages/FindPatient";
 import Telemedicine from "./pages/Telemedicine";
 import RegisterPatient from "./pages/RegisterPatient";
+import Login from "./pages/Login";
 
 function App() {
     return (
@@ -22,8 +23,8 @@ function App() {
                     <Route path="/telemedicine" element={<Telemedicine />} />
                 </Route>
 
-                {/* <Route path="/login" element={<Login />} />
-                <Route path="/forgot-password" element={<ForgotPassword />} /> */}
+                <Route path="/login" element={<Login />} />
+                {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
             </Routes>
         </Router>
     );

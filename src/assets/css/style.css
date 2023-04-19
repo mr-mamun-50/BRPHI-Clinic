@@ -1,13 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+/* import font from folder */
+@font-face {
+    font-family: "PF Isotext Pro";
+    src: url("../fonts/PF Isotext Pro Reg.otf"),
+        url("../fonts/PF Isotext Pro Bold.otf"),
+        url("../fonts/PF Isotext Pro Light.otf"),
+        url("../fonts/PF Isotext Pro Italic.otf"),
+        url("../fonts/PF Isotext Pro Bold Italic.otf"),
+        url("../fonts/PF Isotext Pro Light Italic.otf");
+}
 
 body {
     background: #f0f4f7;
-    font-family: "Inter", "Hind Siliguri", "Baloo Da 2", sans-serif;
+    font-family: "PF Isotext Pro", sans-serif;
     /* min-height: 100vh; */
 }
 
 .text-primary {
-    color: #6e1fea !important;
+    color: #3b71ca !important;
 }
 .text-secondary {
     color: #ed3e80 !important;
@@ -34,7 +43,7 @@ body {
     color: #fff !important;
 }
 .bg-primary {
-    background-color: #6e1fea !important;
+    background-color: #3b71ca !important;
 }
 .bg-secondary {
     background-color: #ed3e80 !important;
@@ -99,7 +108,7 @@ body {
 
 .menu .nav-item .nav-link:hover {
     /* color: #ed3e80; */
-    color: #6e1fea;
+    color: #3b71ca;
 }
 
 .menu .nav-item .nav-link {
@@ -113,19 +122,19 @@ body {
 
 .nav-item .active {
     /* background: #ed3e80; */
-    background: #6e1fea;
+    background: #3b71ca;
     border-radius: 10px;
     color: #fff !important;
 }
 
 .heroSection {
     height: 350px;
-    background: #6e1fea;
+    background: #3b71ca;
     /* border-radius: 0 0 30px 30px; */
     /* background: linear-gradient(rgba(109, 31, 234, 0.5), rgba(0, 0, 0, 0.5)),
         url(../images/4855148.jpg) no-repeat center center; */
     background: linear-gradient(
-            rgba(109, 31, 234, 0.5),
+            rgba(59, 113, 202, 0.5),
             rgba(255, 255, 255, 0.3)
         ),
         url(../images/4855148.jpg) no-repeat center center;
@@ -139,6 +148,13 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* data table heading */
+.hcgwbo {
+    font-weight: bold;
+    color: #3b71ca;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -177,13 +193,7 @@ body {
 
 .btn {
     text-transform: none;
-}
-
-.btn-primary {
-    background: #6e1fea;
-}
-.btn-primary:hover {
-    background: #5033a8;
+    font-size: 14px;
 }
 
 /* bottom border input */
@@ -198,7 +208,7 @@ body {
 }
 .bb-input:focus {
     box-shadow: none !important;
-    border-bottom: 1px solid #6e1fea !important;
+    border-bottom: 1px solid #3b71ca !important;
     border-radius: 0;
     background: transparent;
 }

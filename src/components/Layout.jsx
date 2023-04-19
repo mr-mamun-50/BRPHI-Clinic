@@ -12,7 +12,7 @@ export default function Layout() {
             <main style={{ marginTop: "58px" }}>
                 <Outlet />
             </main>
-            <footer>
+            <footer className="d-none d-md-block">
                 <Footer />
             </footer>
         </>
