@@ -87,14 +87,14 @@ export default function ClinicList() {
                         <DataTable
                             title={
                                 <div className="d-flex justify-content-between">
-                                    <div className="input-group w-25">
+                                    <div className="input-group w-50">
                                         <div className="input-group-text border-0 ps-0">
                                             <i className="fas fa-search"></i>
                                         </div>
                                         <input
                                             type="text"
                                             className="form-control bb-input"
-                                            placeholder="Search title"
+                                            placeholder="Search patient"
                                         />
                                     </div>
                                 </div>

@@ -74,9 +74,9 @@ export default function RegisterPatient() {
                         <div className="col-12 col-md-6">
                             <div className="mb-3">
                                 <label for="gender">Gender</label>
-                                <select className="form-control">
+                                <select className="form-select">
                                     <option selected disabled>
-                                        Select
+                                        Select gender
                                     </option>
                                     <option value="">Male</option>
                                     <option value="">Female</option>
