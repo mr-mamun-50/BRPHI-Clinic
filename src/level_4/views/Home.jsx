@@ -1,5 +1,5 @@
 import React from "react";
-import HomeMenuCard from "../components/HomeMenuCard";
+import HomeMenuCard from "../../level_4/components/HomeMenuCard";
 
 export default function Home() {
     return (
@@ -11,22 +11,22 @@ export default function Home() {
                         <HomeMenuCard
                             text="Clinic List"
                             icon="fas fa-hospital"
-                            route="/clinic-list"
+                            route="/level_4/clinic-list"
                         />
                         <HomeMenuCard
                             text="Find Patient"
                             icon="fas fa-bed"
-                            route="/find-patient"
+                            route="/level_4/find-patient"
                         />
                         <HomeMenuCard
                             text="Register Patient"
                             icon="fas fa-hospital-user"
-                            route="/register-patient"
+                            route="/level_4/register-patient"
                         />
                         <HomeMenuCard
                             text="Telemedicine"
                             icon="fas fa-stethoscope"
-                            route="/telemedicine"
+                            route="/level_4/telemedicine"
                         />
                     </div>
                 </div>
